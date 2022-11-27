@@ -21,15 +21,17 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, kalimod.MOD_ID);
 
     //Kalium Blocks
-    public static final RegistryObject<Block> KALIUM_ORE = registerBlock("kalium_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()),ModCreativeModeTab.KALIUM_TAB);
-
     public static final RegistryObject<Block> KALIUM_BLOCK = registerBlock("kalium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()),
-            UniformInt,ModCreativeModeTab.KALIUM_TAB);
+                    .strength(6f).requiresCorrectToolForDrops()),ModCreativeModeTab.KALIUM_TAB);
 
+    public static final RegistryObject<Block> KALIUM_ORE = registerBlock("kalium_ore.json",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()),ModCreativeModeTab.KALIUM_TAB);
+
+    public static final RegistryObject<Block> DEEPSLATE_KALIUM_ORE = registerBlock("deepslate_kalium_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(7f).requiresCorrectToolForDrops()),ModCreativeModeTab.KALIUM_TAB);
 
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
