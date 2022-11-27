@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": {"model": "kalimod:block/kalium_block"}
+    "": {"model": "kalimod:block/deepslate_kalium_block"}
   }
 }

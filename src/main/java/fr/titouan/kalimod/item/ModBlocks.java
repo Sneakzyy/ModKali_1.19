@@ -21,7 +21,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, kalimod.MOD_ID);
 
     //Kalium Blocks
-    public static final RegistryObject<Block> KALIUM_BLOCK = registerBlock("kalium_block",
+    public static final RegistryObject<Block> KALIUM_BLOCK = registerBlock("kalium_block.json",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()),ModCreativeModeTab.KALIUM_TAB);
 

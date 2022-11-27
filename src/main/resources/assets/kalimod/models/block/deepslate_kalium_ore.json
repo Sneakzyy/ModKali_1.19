@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "kalimod:block/deepslate_kalium_ore"
+  }
+}
