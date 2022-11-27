@@ -1,6 +1,7 @@
 package fr.titouan.kalimod;
 
 import com.mojang.logging.LogUtils;
+import fr.titouan.kalimod.item.ModBlocks;
 import fr.titouan.kalimod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
@@ -34,6 +35,8 @@ public class kalimod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
         
         modEventBus.addListener(this::commonSetup);
         

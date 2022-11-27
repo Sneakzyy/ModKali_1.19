@@ -1,4 +1,4 @@
 {
-  "item/kalium_ingot": "Kalium Ingot",
-  "item/raw_kalium": "Raw Kalium"
+  "kalimod:item/kalium_ingot": "Kalium Ingot",
+  "kalimod:item/raw_kalium": "Raw Kalium"
 }
