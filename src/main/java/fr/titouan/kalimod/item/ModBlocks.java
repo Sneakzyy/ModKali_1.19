@@ -21,11 +21,11 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, kalimod.MOD_ID);
 
     //Kalium Blocks
-    public static final RegistryObject<Block> KALIUM_BLOCK = registerBlock("kalium_block.json",
+    public static final RegistryObject<Block> KALIUM_BLOCK = registerBlock("kalium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()),ModCreativeModeTab.KALIUM_TAB);
 
-    public static final RegistryObject<Block> KALIUM_ORE = registerBlock("kalium_ore.json",
+    public static final RegistryObject<Block> KALIUM_ORE = registerBlock("kalium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()),ModCreativeModeTab.KALIUM_TAB);
 
