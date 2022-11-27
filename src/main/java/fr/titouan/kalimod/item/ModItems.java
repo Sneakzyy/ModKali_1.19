@@ -18,6 +18,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.KALIUM_TAB)));
     public static final RegistryObject<Item> RAW_KALIUM = ITEMS.register("raw_kalium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.KALIUM_TAB)));
+    public static final RegistryObject<Item> KALIUM_NUGGET = ITEMS.register("kalium_nugget",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.KALIUM_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

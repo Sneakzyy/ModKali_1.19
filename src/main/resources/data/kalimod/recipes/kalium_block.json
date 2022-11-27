@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "kalimod:kalium_ingot"
+    }
+  },
+  "result": {
+    "item": "kalimod:kalium_block"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "kalimod:crafting_shaped",
+  "group": "kalium_ingot",
+  "key": {
+    "#": {
+      "item": "kalimod:kalium_nugget"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "kalimod:kalium_ingot"
+  }
+}

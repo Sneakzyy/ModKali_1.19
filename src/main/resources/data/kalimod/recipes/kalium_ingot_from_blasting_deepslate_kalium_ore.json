@@ -1,0 +1,10 @@
+{
+  "type": "kalimod:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "kalium_ingot",
+  "ingredient": {
+    "item": "kalimod:deepslate_kalium_ore"
+  },
+  "result": "kalimod:kalium_ingot"
+}
