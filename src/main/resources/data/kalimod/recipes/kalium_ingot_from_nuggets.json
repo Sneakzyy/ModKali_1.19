@@ -1,6 +1,6 @@
 {
-  "type": "kalimod:crafting_shaped",
-  "group": "kalium_ingot",
+  "type": "minecraft:crafting_shaped",
+  "group": "kalimod:kalium_ingot",
   "key": {
     "#": {
       "item": "kalimod:kalium_nugget"

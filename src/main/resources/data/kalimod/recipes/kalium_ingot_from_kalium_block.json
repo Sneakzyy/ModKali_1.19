@@ -1,6 +1,6 @@
 {
-  "type": "kalimod:crafting_shapeless",
-  "group": "kalium_ingot",
+  "type": "minecraft:crafting_shapeless",
+  "group": "kalimod:kalium_ingot",
   "ingredients": [
     {
       "item": "kalimod:kalium_block"
