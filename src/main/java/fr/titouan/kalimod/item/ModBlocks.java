@@ -1,10 +1,12 @@
 package fr.titouan.kalimod.item;
 
 import fr.titouan.kalimod.kalimod;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,9 +21,14 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, kalimod.MOD_ID);
 
     //Kalium Blocks
+    public static final RegistryObject<Block> KALIUM_ORE = registerBlock("kalium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()),ModCreativeModeTab.KALIUM_TAB);
+
     public static final RegistryObject<Block> KALIUM_BLOCK = registerBlock("kalium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()),ModCreativeModeTab.KALIUM_TAB);
+                    .strength(6f).requiresCorrectToolForDrops()),
+            UniformInt,ModCreativeModeTab.KALIUM_TAB);
 
 
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
